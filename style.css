@@ -6,13 +6,11 @@ html {
   scroll-behavior: smooth;
 }
 
-
-body{
-  margin: 0;
-  height: 8000px;
+body {
+  color: white;
 }
 
-.header-wrapper{
+.nav-bar {
   background-color: #2d3763;
   display: flex;
   flex-wrap: nowrap;
@@ -31,14 +29,18 @@ body{
   margin-right: 2.5vw;
 }
 
+#education,
+#work-experience,
+#projects {
+  height: 700px;
+}
 
-.home-wrapper {
+#home {
   display: flex;
   padding-left: 10vw;
   padding-right: 10vw;
 
   background-color: #1d264a;
-
 }
 
 .home-text{
@@ -49,7 +51,6 @@ body{
   font-size: 1.2vw;
   margin-top: 5vh;
 }
-
 
 .mypicture-wrapper {
   padding-top: 3vw;
@@ -63,4 +64,16 @@ body{
   object-position: top center;
   border-radius: 60%;
 
+}
+
+#education {
+  background-color: green;
+}
+
+#work-experience {
+  background-color: blue;
+}
+
+#projects {
+  background-color: yellow;
 }
