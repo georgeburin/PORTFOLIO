@@ -4,10 +4,11 @@
 
 html {
   scroll-behavior: smooth;
+  /*background: linear-gradient(#e66465, #9198e5);*/
 }
 
 body {
-  color: white;
+  background-color: rgb(26 26 26);
 }
 
 .nav-bar {
@@ -27,33 +28,36 @@ body {
   /*margin: 0 auto;*/
   margin-left: 2.5vw;
   margin-right: 2.5vw;
+  text-decoration: none;
+  color: white;
 }
 
-#education,
+
 #work-experience,
 #projects {
   height: 700px;
 }
 
-#home {
+.home {
   display: flex;
-  padding-left: 10vw;
-  padding-right: 10vw;
+  justify-content: space-between;
+  padding-left: 15vw;
+  padding-right: 15vw;
 
-  background-color: #1d264a;
+  /*background-color: #1d264a;*/
 }
 
 .home-text{
   text-align: justify;
-  width:70%;
-  margin-right: 2.5vw;
+  width:50%;
+  margin-right: 5vw;
   color: white;
   font-size: 1.2vw;
-  margin-top: 5vh;
+  margin-top: 15vh;
 }
 
 .mypicture-wrapper {
-  padding-top: 3vw;
+  padding-top: 10vh;
   width: 30%;
 }
 
@@ -63,17 +67,59 @@ body {
   object-fit: cover;
   object-position: top center;
   border-radius: 60%;
-
 }
 
-#education {
-  background-color: green;
+
+.education-header{
+  text-align: center;
+  font-size: 6.5vh;
+  color: orange;
+  margin-bottom: 5vh;
+}
+
+.education-header::before,
+.education-header::after {
+  display: inline-block;
+  content: "";
+  border-top: .3rem solid orange;
+  width: 20rem;
+  margin: 0 1rem;
+  transform: translateY(-0.5rem);
+}
+
+.education-wrapper{
+  padding-top: 10vh;
+}
+
+.education{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+
+
+.mypicture-education-wrapper{
+  width: 30%;
+}
+
+.mypicture-education {
+  width: 30vw;
+}
+
+.education-text {
+  color: white;
+  width: 35vw;
+}
+
+ul {
+  padding: 1.5vw;
 }
 
 #work-experience {
-  background-color: blue;
+  /*background-color: blue;*/
 }
 
 #projects {
-  background-color: black;
+  /*background-color: black;*/
 }
